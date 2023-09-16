@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    android:id="@+id/lldiary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/ic_baseline_share_24"
+                android:textSize="34sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/ic_baseline_save_24"
+                android:textSize="34sp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/btnUndo"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_baseline_undo_24"
+                    android:textSize="34sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/btnRedo"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_baseline_redo_24"
+                    android:textSize="34sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/btnSpeak"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/ic_baseline_keyboard_voice_24"
+                    android:textSize="34sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableRight="@drawable/ic_baseline_cancel_24"
+                android:textSize="34sp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableRight="@drawable/ic_baseline_delete_24"
+                android:textSize="34sp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#00ffffff"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Date"
+            android:inputType="date"
+            android:textColor="?attr/text_color"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#00ffffff"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:maxLength="35"
+            android:textColor="#00BCD4"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="38dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:backgroundTint="#00ffffff"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Content"
+            android:inputType="textMultiLine"
+            android:textColor="?attr/text_color"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="48dp" />
+    </LinearLayout>
+
+</LinearLayout>
